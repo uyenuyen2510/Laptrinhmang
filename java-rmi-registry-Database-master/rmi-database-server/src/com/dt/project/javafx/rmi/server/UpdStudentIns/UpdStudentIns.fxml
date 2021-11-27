@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXDatePicker?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.InnerShadow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.text.Font?>
+
+<StackPane fx:id="updateStudentView" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.dt.project.javafx.rmi.server.UpdStudentIns.UpdateStudentController">
+   <children>
+      <AnchorPane id="AnchorPane" fx:id="pnlMain" prefHeight="480.0" prefWidth="1181.0" style="-fx-background-color: #ffae23,linear-gradient(#38424b 0%, #1f2429 20%, #191d22 100%),linear-gradient(#20262b, #191d22),radial-gradient(center 50% 40%, radius 100%, rgba(114,131,148,0.9), rgba(255,255,255,0));;" stylesheets="@../util/registerstudent.css">
+         <children>
+            <Label layoutX="417.0" layoutY="25.0" text="Registrer" textFill="#ffe86b">
+               <font>
+                  <Font name="Geometr415 Blk BT Black" size="44.0" />
+               </font>
+            </Label>
+            <Label layoutX="627.0" layoutY="3.0" text="Student" textFill="WHITE">
+               <font>
+                  <Font name="Arial Black" size="64.0" />
+               </font>
+            </Label>
+            <Label layoutX="64.0" layoutY="94.0" opacity="0.13" prefHeight="359.0" prefWidth="1185.0" style="-fx-background-color: #1565c0;" textFill="#726b6b">
+               <font>
+                  <Font size="18.0" />
+               </font>
+               <effect>
+                  <InnerShadow />
+               </effect>
+            </Label>
+            <TextField fx:id="N_bac" layoutX="237.0" layoutY="191.0" prefHeight="47.0" prefWidth="358.0" promptText="Address" />
+            <Label layoutX="100.0" layoutY="192.0" text="N_bac" textFill="WHITE">
+               <font>
+                  <Font name="Baskerville Old Face" size="31.0" />
+               </font>
+            </Label>
+            <TextField fx:id="N_ins_univ" layoutX="866.0" layoutY="125.0" prefHeight="47.0" prefWidth="358.0" promptText="N_ins_univ" />
+            <Label layoutX="100.0" layoutY="321.0" text="W_bac" textFill="WHITE">
+               <font>
+                  <Font name="Baskerville Old Face" size="31.0" />
+               </font>
+            </Label>
+            <Label layoutX="100.0" layoutY="262.0" text="Date_bac" textFill="WHITE">
+               <font>
+                  <Font name="Baskerville Old Face" size="31.0" />
+               </font>
+            </Label>
+            <JFXDatePicker fx:id="Date_bac" defaultColor="#f5af23" layoutX="237.0" layoutY="262.0" prefHeight="46.0" prefWidth="358.0" promptText="Date_bac" style="-fx-text-inner-color: WHITE;" />
+            <JFXButton fx:id="btnReg" buttonType="RAISED" layoutX="1044.0" layoutY="360.0" onAction="#btnRegisterEvent" text="Registrer" textFill="WHITE">
+               <font>
+                  <Font size="25.0" />
+               </font>
+            </JFXButton>
+            <Label layoutX="646.0" layoutY="196.0" text="Anne" textFill="WHITE">
+               <font>
+                  <Font name="Baskerville Old Face" size="31.0" />
+               </font>
+            </Label>
+            <Label layoutX="642.0" layoutY="127.0" text="N_ins_univ" textFill="WHITE">
+               <font>
+                  <Font name="Baskerville Old Face" size="31.0" />
+               </font>
+            </Label>
+            <Separator layoutX="624.0" layoutY="118.0" orientation="VERTICAL" prefHeight="305.0" prefWidth="4.0" />
+            <ComboBox fx:id="code" layoutX="866.0" layoutY="260.0" onMouseClicked="#univSname" prefHeight="37.0" prefWidth="358.0" promptText="code_univ" />
+            <Label layoutX="646.0" layoutY="260.0" text="code_univ" textFill="WHITE">
+               <font>
+                  <Font name="Baskerville Old Face" size="31.0" />
+               </font>
+            </Label>
+            <Label layoutX="642.0" layoutY="323.0" text="University" textFill="WHITE">
+               <font>
+                  <Font name="Baskerville Old Face" size="31.0" />
+               </font>
+            </Label>
+            <Label fx:id="univ" layoutX="865.0" layoutY="323.0" prefHeight="37.0" prefWidth="358.0" textFill="WHITE">
+               <font>
+                  <Font name="Baskerville Old Face" size="31.0" />
+               </font>
+            </Label>
+            <ComboBox fx:id="W_bac" layoutX="238.0" layoutY="323.0" prefHeight="37.0" prefWidth="358.0" promptText="code_univ" />
+            <ComboBox fx:id="Anne" layoutX="865.0" layoutY="196.0" prefHeight="37.0" prefWidth="358.0" promptText="Anne" />
+            <Label layoutX="100.0" layoutY="127.0" text="Date_Ins" textFill="WHITE">
+               <font>
+                  <Font name="Baskerville Old Face" size="31.0" />
+               </font>
+            </Label>
+            <Label fx:id="Date_Ins" layoutX="238.0" layoutY="127.0" prefHeight="37.0" prefWidth="358.0" textFill="WHITE">
+               <font>
+                  <Font name="Baskerville Old Face" size="31.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </children>
+</StackPane>
